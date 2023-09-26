@@ -1,0 +1,69 @@
+.hero{
+    background: #1e1e1e;
+
+    .hero-logo{
+        background: #2e2e2e;
+        padding: 12pt 56pt;
+        border-radius: 6pt;
+        margin-bottom: 6pt;
+
+        h1{
+            font-family: "IBM Plex Mono";
+            font-size: 48pt;
+            color: #fafafa;
+        }
+    }
+    p{
+        font-family: "Inter";
+        font-size: 12pt;
+        color: #fafafa;
+    }
+}
+
+.ai-powered{
+    background: #ffb9b9;
+
+    .title{
+        background-color: #1e1e1eaa;
+
+        h2{
+            font-family: "Inter";
+            font-size: 42pt;
+            color: #fafafa;
+            text-align: center;
+            font-weight: 400;
+        }
+        p{
+            font-family: "IBM Plex Mono";
+            font-size: 16pt;
+            color: #fafafa;
+            font-weight: bold;
+            margin-bottom: 12pt;
+        }
+    }
+    .info{
+
+        h2{
+            font-family: "Inter";
+            font-size: 18pt;
+            color: #fafafa;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 12pt;
+        }
+        p{
+            font-family: "Inter";
+            font-size: 12pt;
+            color: #fafafa;
+            width: 60%;
+            text-align: justify;
+        }
+    }
+}
+
+
+@media (max-width: 800px) {
+    .ai-powered{
+        flex-direction: column;
+    }
+  }
