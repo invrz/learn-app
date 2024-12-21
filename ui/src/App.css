@@ -1,0 +1,13 @@
+.textInput, .buttonInput, select{
+  padding: 10px 12px;
+}
+
+input, select{
+  width: 360px;
+  max-width: 80%;
+}
+
+.dateInput{
+  width: 175px;
+  max-width: 60%;
+}

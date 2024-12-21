@@ -1,0 +1,31 @@
+.landing{
+
+    &--hero, &--pricing{
+        display: flex;
+        flex-direction: column;
+    }
+    &--textxl{
+        font-size: 4.8rem;
+    }
+    &--textl{
+        font-size: 1.6rem;
+    }
+    &--textmono{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    &--textlight{
+        color: #acacac;
+    }
+    &--features-img{
+        width: 300px;
+        height: 300px;
+        border-radius: 150px;
+    }
+
+}
+
+.grid-row{
+    &--stack{
+        flex-direction: column;
+    }
+}
