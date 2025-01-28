@@ -1,8 +1,8 @@
 // index.js
 const express = require('express');
 const cors = require('cors');
-const apiRoutes = require('./apis');
-const { testSequelizeConnection, testPgConnection } = require('./db');
+const coursesRoutes = require('./courses/routes');
+const connectToDb = require('./db');
 require('dotenv').config();
 
 const app = express();
@@ -14,11 +14,11 @@ app.use(express.json());
 /*
 // Test database connections
 testSequelizeConnection();
-testPgConnection();
+connectToDb.connectToDb();
 */
 
 // Use API routes
-app.use('/api', apiRoutes);
+app.use('/courses', coursesRoutes);
 
 const usingMiddleWare = (req, res, next) =>{
 

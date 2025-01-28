@@ -12,7 +12,6 @@ import "patterns-ui/styles/main.css";
 import "./App.css";
 import "./index.css";
 import CourseView from './routes/courseview/layout';
-import QuizView from './routes/quizview/page';
 
 const App = () => {
   return (
@@ -27,11 +26,20 @@ const App = () => {
         <Route path="/usercourses" element={<UserCourses />} />
         <Route path="/coursedetails" element={<CourseDetails />} />
         <Route path="/quizdetails" element={<QuizDetails />} />
-        <Route path="/courseview" element={<CourseView />} />
-        <Route path="/quizview" element={<QuizView />} />
+        <Route path="/courseview">
+          <Route path=':courseid' element={<CourseView />} />
+        </Route>
       </Routes>
     </Router>
   );
 };
 
 export default App;
+
+/*
+
+        <Route path="/quizview">
+          <Route path=':quizname' element={<QuizView />} />
+        </Route>
+
+*/

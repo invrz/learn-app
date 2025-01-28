@@ -1,4 +1,4 @@
-const CourseViewSideNav = () =>{ 
+const AppSideNav = () =>{ 
 
     return(
         <>
@@ -20,4 +20,4 @@ const CourseViewSideNav = () =>{
 
 }
 
-export default CourseViewSideNav;
+export default AppSideNav;

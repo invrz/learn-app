@@ -1,0 +1,30 @@
+{
+    "courses": [
+      {
+        "coursename": "coursenotfound",
+        "courseid": 999,
+        "coursetitle": "no course with this title",
+        "coursedesc": "no course with this description",
+        "coursefiles": ["filenameurl1url", "filenameurl2url"],
+        "coursequizquestionbank": "coursequizbankurl",
+        "coursecodebase": "coursecodebaseurl"
+      }, {
+        "coursename": "learn-backend-postgres-express",
+        "courseid": 999,
+        "coursetitle": "Backend Development with Node.Js, Express and PostgreSQL",
+        "coursedesc": "Start of your journey in Backend End Development using Node and Express",
+        "coursefiles": [
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/1-getting-started.md", 
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/2-node-project-setup.md",
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/3-setup-rest-apis.md",
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/4-connect-postgres.md",
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/5-express-sql-operations.md",
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/6-middlewares-and-auth.md",
+            "https://raw.githubusercontent.com/invrz/learn-backend-postgres-express/refs/heads/main/7-rest-apis.md"
+        ],
+        "coursequizquestionbank": "./quizzes/learn-backend-postgres-express.json",
+        "coursecodebase": "coursecodebaseurl"
+      }
+
+    ]
+}

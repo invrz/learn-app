@@ -11,3 +11,11 @@ input, select{
   width: 175px;
   max-width: 60%;
 }
+
+#quiz-window{
+  display: none;
+}
+
+.primary-quiz-button{
+  padding: 8px 16px;
+}
