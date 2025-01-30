@@ -19,3 +19,21 @@ input, select{
 .primary-quiz-button{
   padding: 8px 16px;
 }
+.quiz-nav-button{
+  padding: 8px 16px;
+  margin: 2px 4px;
+}
+.quiz-option-button{
+  width: 48%;
+  padding: 6px 12px;
+  text-overflow: auto;
+  text-align: left;
+  margin: 12px auto;
+  margin-right: 1%;
+}
+.quiz-option-button:hover{
+  background-color: aliceblue;
+}
+.quiz-option-button:active{
+  background-color: green;
+}

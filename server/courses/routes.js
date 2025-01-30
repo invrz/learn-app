@@ -1,6 +1,6 @@
 // apis.js
 const express = require('express');
-const { getCourseDetails, addCourseDetails, updateCourseDetails, getCourseQuestions } = require('./models');
+const { getCourseDetails, addCourseDetails, updateCourseDetails, getCourseQuestions, getCourseQuestionsAndAnswers, getUserScore } = require('./models');
 const router = express.Router();
 
 // Endpoint to get course details by id
@@ -20,9 +20,42 @@ router.get('/getcourse/:courseid', async (req, res) => {
 // Endpoint to get course questions by id
 router.post('/getcoursequizquestions', async (req, res) => {
   try {
-    const courseQuestions = await getCourseQuestions(req.body.questionbankurl);
+    const courseQuestions = await getCourseQuestions(req.body.courseId);
     if (courseQuestions) {
       res.json(courseQuestions);
+    } else {
+      res.status(404).json({ message: 'Course not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// Endpoint to get score for answers submitted by users based on course and question ids
+router.post('/getscoreforquiz', async (req, res) => {
+  try {
+    const answersSelectedByUserById = req.body.answersById;
+    const courseId = req.body.courseId;
+
+    const userScore = await getUserScore(courseId, answersSelectedByUserById)
+
+    if (userScore) {
+      res.json(userScore);
+    } else {
+      res.status(404).json({ message: 'Could not process your quiz submission at this time' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+
+// Endpoint to get course questions and answers by id
+router.post('/getcoursequizquestionbank', async (req, res) => {
+  try {
+    const courseQuestionsAndAnswers = await getCourseQuestionsAndAnswers(req.body.questionbankurl);
+    if (courseQuestionsAndAnswers) {
+      res.json(courseQuestionsAndAnswers);
     } else {
       res.status(404).json({ message: 'Course not found' });
     }

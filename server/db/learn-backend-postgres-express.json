@@ -1,0 +1,762 @@
+{
+    "questions": [
+        {
+            "id": "0",
+            "description": "What is the primary role of the backend in a web application?",
+            "options": [
+                { "label": "a", "text": "Handling the user interface and frontend logic" },
+                { "label": "b", "text": "Processing and storing data, and handling server-side logic" },
+                { "label": "c", "text": "Creating interactive UI elements" },
+                { "label": "d", "text": "Managing the database schema and structure only" }
+            ]
+        },
+        {
+            "id": "1",
+            "description": "Which technology allows developers to execute JavaScript code on the server-side?",
+            "options": [
+                { "label": "a", "text": "React.js" },
+                { "label": "b", "text": "Node.js" },
+                { "label": "c", "text": "Express.js" },
+                { "label": "d", "text": "PostgreSQL" }
+            ]
+        },
+        {
+            "id": "2",
+            "description": "Which of the following is a web application framework for Node.js?",
+            "options": [
+                { "label": "a", "text": "Express.js" },
+                { "label": "b", "text": "PostgreSQL" },
+                { "label": "c", "text": "MongoDB" },
+                { "label": "d", "text": "React.js" }
+            ]
+        },
+        {
+            "id": "3",
+            "description": "Which database management system is known for its extensibility and support for complex queries?",
+            "options": [
+                { "label": "a", "text": "MySQL" },
+                { "label": "b", "text": "MongoDB" },
+                { "label": "c", "text": "PostgreSQL" },
+                { "label": "d", "text": "SQLite" }
+            ]
+        },
+        {
+            "id": "4",
+            "description": "Which npm package is used to interact with PostgreSQL from a Node.js application?",
+            "options": [
+                { "label": "a", "text": "express" },
+                { "label": "b", "text": "pg" },
+                { "label": "c", "text": "mongodb" },
+                { "label": "d", "text": "sequelize" }
+            ]
+        },
+        {
+            "id": "5",
+            "description": "What is Node.js and why is it popular for backend development?",
+            "options": [
+                { "label": "a", "text": "Node.js is a JavaScript library for frontend development" },
+                { "label": "b", "text": "Node.js is a JavaScript runtime for backend development, enabling full-stack JavaScript applications" },
+                { "label": "c", "text": "Node.js is a backend framework similar to Express.js" },
+                { "label": "d", "text": "Node.js is a database technology for managing data persistence" }
+            ]
+        },
+        {
+            "id": "6",
+            "description": "What is the primary benefit of using Node.js for both frontend and backend development?",
+            "options": [
+                { "label": "a", "text": "Allows developers to write code in multiple languages for the frontend and backend" },
+                { "label": "b", "text": "Enables efficient data synchronization between client and server using JavaScript" },
+                { "label": "c", "text": "It’s easier to build databases in JavaScript" },
+                { "label": "d", "text": "It simplifies the process of creating UI components" }
+            ]
+        },
+        {
+            "id": "7",
+            "description": "Which engine is Node.js built on to provide high performance for backend applications?",
+            "options": [
+                { "label": "a", "text": "V8 JavaScript engine" },
+                { "label": "b", "text": "SpiderMonkey engine" },
+                { "label": "c", "text": "JavaScriptCore engine" },
+                { "label": "d", "text": "Hermes engine" }
+            ]
+        },
+        {
+            "id": "8",
+            "description": "What command initializes a Node.js project and creates a package.json file?",
+            "options": [
+                { "label": "a", "text": "npm start" },
+                { "label": "b", "text": "npm init -y" },
+                { "label": "c", "text": "npm install" },
+                { "label": "d", "text": "npm create" }
+            ]
+        },
+        {
+            "id": "9",
+            "description": "Which npm command is used to install Express.js in a Node.js project?",
+            "options": [
+                { "label": "a", "text": "npm install express" },
+                { "label": "b", "text": "npm install express.js" },
+                { "label": "c", "text": "npm init express" },
+                { "label": "d", "text": "npm add express" }
+            ]
+        },
+        {
+            "id": "10",
+            "description": "What does the command 'node hello.js' do in a Node.js project?",
+            "options": [
+                { "label": "a", "text": "Runs the hello.js script and prints the message to the terminal" },
+                { "label": "b", "text": "Starts a Node.js server" },
+                { "label": "c", "text": "Compiles the JavaScript code" },
+                { "label": "d", "text": "Creates a new hello.js file" }
+            ]
+        },
+        {
+            "id": "11",
+            "description": "What type of file can you create to run a Node.js script from the terminal?",
+            "options": [
+                { "label": "a", "text": ".html files" },
+                { "label": "b", "text": ".js files" },
+                { "label": "c", "text": ".css files" },
+                { "label": "d", "text": ".json files" }
+            ]
+        },
+        {
+            "id": "12",
+            "description": "What is Express.js and why is it popular for building RESTful APIs?",
+            "options": [
+                { "label": "a", "text": "Express.js is a database management system" },
+                { "label": "b", "text": "Express.js is a JavaScript runtime that handles server-side logic" },
+                { "label": "c", "text": "Express.js is a Node.js web framework for building APIs with features like routing and middleware" },
+                { "label": "d", "text": "Express.js is a client-side JavaScript library for building interactive UIs" }
+            ]
+        },
+        {
+            "id": "13",
+            "description": "What is the main advantage of using middleware in an Express.js application?",
+            "options": [
+                { "label": "a", "text": "Middleware allows adding additional functionality, such as authentication or logging, to requests and responses" },
+                { "label": "b", "text": "Middleware is used to configure the database connection" },
+                { "label": "c", "text": "Middleware provides a way to define routes for handling requests" },
+                { "label": "d", "text": "Middleware helps to build interactive front-end components" }
+            ]
+        },
+        {
+            "id": "14",
+            "description": "In Express.js, how do you define a route for handling a GET request?",
+            "options": [
+                { "label": "a", "text": "app.route().get('/endpoint', handler)" },
+                { "label": "b", "text": "app.get('/endpoint', handler)" },
+                { "label": "c", "text": "app.handle('GET', '/endpoint', handler)" },
+                { "label": "d", "text": "app.method('GET', '/endpoint', handler)" }
+            ]
+        },
+        {
+            "id": "15",
+            "description": "What does the app.use() method in Express.js do?",
+            "options": [
+                { "label": "a", "text": "It defines a route for handling POST requests" },
+                { "label": "b", "text": "It allows you to define middleware to process incoming requests before reaching the route handlers" },
+                { "label": "c", "text": "It is used to start the Express.js server" },
+                { "label": "d", "text": "It sets up the database connection" }
+            ]
+        },
+        {
+            "id": "16",
+            "description": "Which of the following is an example of sending a JSON response in Express.js?",
+            "options": [
+                { "label": "a", "text": "res.send({ message: 'Hello, API!' })" },
+                { "label": "b", "text": "res.sendFile('message.json')" },
+                { "label": "c", "text": "res.json({ message: 'Hello, API!' })" },
+                { "label": "d", "text": "res.write({ message: 'Hello, API!' })" }
+            ]
+        },
+        {
+            "id": "17",
+            "description": "What is the purpose of using the express.json() middleware in an Express application?",
+            "options": [
+                { "label": "a", "text": "It parses incoming JSON request bodies so that they can be accessed as JavaScript objects" },
+                { "label": "b", "text": "It authenticates incoming requests using a token" },
+                { "label": "c", "text": "It handles logging of HTTP requests" },
+                { "label": "d", "text": "It validates data before sending responses" }
+            ]
+        },
+        {
+            "id": "18",
+            "description": "How do you define a route for handling a POST request in Express.js?",
+            "options": [
+                { "label": "a", "text": "app.post('/endpoint', handler)" },
+                { "label": "b", "text": "app.route().post('/endpoint', handler)" },
+                { "label": "c", "text": "app.method('POST', '/endpoint', handler)" },
+                { "label": "d", "text": "app.handle('POST', '/endpoint', handler)" }
+            ]
+        },
+        {
+            "id": "19",
+            "description": "What is PostgreSQL?",
+            "options": [
+                { "label": "a", "text": "A NoSQL database management system" },
+                { "label": "b", "text": "An open-source relational database management system" },
+                { "label": "c", "text": "A JavaScript runtime environment" },
+                { "label": "d", "text": "A cloud storage solution" }
+            ]
+        },
+        {
+            "id": "20",
+            "description": "What is the purpose of creating a user in PostgreSQL when setting up a database?",
+            "options": [
+                { "label": "a", "text": "To grant access to the database and assign permissions" },
+                { "label": "b", "text": "To configure the database schema" },
+                { "label": "c", "text": "To create a backup of the database" },
+                { "label": "d", "text": "To encrypt the data stored in the database" }
+            ]
+        },
+        {
+            "id": "21",
+            "description": "In PostgreSQL, which of the following data types is used to store an array of JSON objects?",
+            "options": [
+                { "label": "a", "text": "JSONB" },
+                { "label": "b", "text": "VARCHAR" },
+                { "label": "c", "text": "ARRAY" },
+                { "label": "d", "text": "TEXT" }
+            ]
+        },
+        {
+            "id": "22",
+            "description": "How do you create a table in PostgreSQL?",
+            "options": [
+                { "label": "a", "text": "CREATE TABLE <table_name>" },
+                { "label": "b", "text": "CREATE DATABASE <table_name>" },
+                { "label": "c", "text": "CREATE SCHEMA <table_name>" },
+                { "label": "d", "text": "MAKE TABLE <table_name>" }
+            ]
+        },
+        {
+            "id": "23",
+            "description": "What is the significance of the SERIAL data type in PostgreSQL?",
+            "options": [
+                { "label": "a", "text": "It automatically generates a unique identifier for each row" },
+                { "label": "b", "text": "It stores large text data" },
+                { "label": "c", "text": "It defines a date and time value" },
+                { "label": "d", "text": "It is used for storing binary data" }
+            ]
+        },
+        {
+            "id": "24",
+            "description": "Which PostgreSQL command is used to assign all privileges on a database to a user?",
+            "options": [
+                { "label": "a", "text": "GRANT ALL PRIVILEGES ON DATABASE <dbname> TO <username>" },
+                { "label": "b", "text": "ASSIGN PRIVILEGES ON <dbname> TO <username>" },
+                { "label": "c", "text": "CREATE PRIVILEGES ON DATABASE <dbname> TO <username>" },
+                { "label": "d", "text": "SET PRIVILEGES ON DATABASE <dbname> TO <username>" }
+            ]
+        },
+        {
+            "id": "25",
+            "description": "Which of the following PostgreSQL commands is used to create a new database?",
+            "options": [
+                { "label": "a", "text": "CREATE DATABASE <dbname>" },
+                { "label": "b", "text": "NEW DATABASE <dbname>" },
+                { "label": "c", "text": "MAKE DATABASE <dbname>" },
+                { "label": "d", "text": "BUILD DATABASE <dbname>" }
+            ]
+        },
+        {
+            "id": "26",
+            "description": "What does the ALTER ROLE command in PostgreSQL do?",
+            "options": [
+                { "label": "a", "text": "It modifies the properties of an existing role (user)" },
+                { "label": "b", "text": "It creates a new role" },
+                { "label": "c", "text": "It grants a user access to a database" },
+                { "label": "d", "text": "It drops an existing role" }
+            ]
+        },
+        {
+            "id": "27",
+            "description": "In the context of a PostgreSQL database for a messaging app, which table would store the user's messages?",
+            "options": [
+                { "label": "a", "text": "Messages" },
+                { "label": "b", "text": "User" },
+                { "label": "c", "text": "Contacts" },
+                { "label": "d", "text": "Chats" }
+            ]
+        },
+        {
+            "id": "28",
+            "description": "Which SQL query is used to retrieve all messages from user1@example.com to user2@example.com?",
+            "options": [
+                { "label": "a", "text": "SELECT * FROM messages WHERE sender = 'user1@example.com' AND recipient = 'user2@example.com';" },
+                { "label": "b", "text": "SELECT * FROM messages WHERE sender = 'user1@example.com' AND recipient = 'user2@example.com' ORDER BY timestamp DESC;" },
+                { "label": "c", "text": "SELECT * FROM messages WHERE sender = 'user1@example.com' AND recipient = 'user2@example.com' GROUP BY timestamp;" },
+                { "label": "d", "text": "SELECT * FROM messages WHERE sender = 'user2@example.com' AND recipient = 'user1@example.com';" }
+            ]
+        },
+        {
+            "id": "29",
+            "description": "How do you insert a new message into the messages table in PostgreSQL?",
+            "options": [
+                { "label": "a", "text": "INSERT INTO messages (sender, recipient, timestamp, content) VALUES ('user1@example.com', 'user2@example.com', NOW(), 'Hello!');" },
+                { "label": "b", "text": "INSERT INTO messages (sender, recipient, timestamp, content) VALUES ($1, $2, NOW(), $3);" },
+                { "label": "c", "text": "INSERT INTO messages (sender, recipient, content) VALUES ('user1@example.com', 'user2@example.com', 'Hello!');" },
+                { "label": "d", "text": "INSERT INTO messages (sender, recipient) VALUES ('user1@example.com', 'user2@example.com');" }
+            ]
+        },
+        {
+            "id": "30",
+            "description": "What is the purpose of using parameterized queries in SQL?",
+            "options": [
+                { "label": "a", "text": "To prevent SQL injection by securely handling user inputs" },
+                { "label": "b", "text": "To improve database performance" },
+                { "label": "c", "text": "To increase the complexity of SQL queries" },
+                { "label": "d", "text": "To create a backup of the database" }
+            ]
+        },
+        {
+            "id": "31",
+            "description": "Which SQL command is used to update the content of a specific message in PostgreSQL?",
+            "options": [
+                { "label": "a", "text": "UPDATE messages SET content = $1 WHERE sender = $2 AND recipient = $3 AND timestamp = $4;" },
+                { "label": "b", "text": "INSERT INTO messages SET content = 'New message content' WHERE sender = 'user1@example.com';" },
+                { "label": "c", "text": "UPDATE messages SET content = 'New message content' WHERE message_id = 123;" },
+                { "label": "d", "text": "DELETE FROM messages SET content = 'New message content';" }
+            ]
+        },
+        {
+            "id": "32",
+            "description": "Which SQL query deletes a message from the messages table?",
+            "options": [
+                { "label": "a", "text": "DELETE FROM messages WHERE message_id = $1;" },
+                { "label": "b", "text": "REMOVE FROM messages WHERE sender = 'user1@example.com';" },
+                { "label": "c", "text": "DROP FROM messages WHERE sender = 'user1@example.com';" },
+                { "label": "d", "text": "DELETE FROM messages WHERE sender = $1 AND recipient = $2;" }
+            ]
+        },
+        {
+            "id": "35",
+            "description": "How can you retrieve messages exchanged between two users in PostgreSQL using SQL?",
+            "options": [
+                { "label": "a", "text": "SELECT * FROM messages WHERE sender = $1 AND recipient = $2;" },
+                { "label": "b", "text": "SELECT * FROM messages WHERE (sender = $1 AND recipient = $2) OR (sender = $2 AND recipient = $1) ORDER BY timestamp DESC;" },
+                { "label": "c", "text": "SELECT * FROM messages WHERE sender = $1 GROUP BY timestamp;" },
+                { "label": "d", "text": "SELECT * FROM messages WHERE recipient = $1;" }
+            ]
+        },
+        {
+            "id": "36",
+            "description": "What is SQL injection and why is it important to use parameterized queries?",
+            "options": [
+                { "label": "a", "text": "SQL injection is a security vulnerability where an attacker can insert malicious SQL code into queries. Parameterized queries help prevent it." },
+                { "label": "b", "text": "SQL injection is a method to increase database performance by running queries concurrently." },
+                { "label": "c", "text": "SQL injection is a technique to retrieve data from multiple databases at once." },
+                { "label": "d", "text": "SQL injection is a way to avoid SQL commands by using functions." }
+            ]
+        },
+        {
+            "id": "37",
+            "description": "Which SQL clause is used to sort the retrieved data in a query?",
+            "options": [
+                { "label": "a", "text": "ORDER BY" },
+                { "label": "b", "text": "GROUP BY" },
+                { "label": "c", "text": "HAVING" },
+                { "label": "d", "text": "WHERE" }
+            ]
+        },
+        {
+            "id": "38",
+            "description": "In the context of a messaging app, what is a typical use case for using the DELETE SQL query?",
+            "options": [
+                { "label": "a", "text": "To delete specific messages between users" },
+                { "label": "b", "text": "To delete users' contact information" },
+                { "label": "c", "text": "To remove the entire message table" },
+                { "label": "d", "text": "To delete user accounts from the database" }
+            ]
+        },
+        {
+            "id": "39",
+            "description": "In the query 'INSERT INTO Messages (\"from\", \"to\", timestamp, message) VALUES ($1, $2, $3, $4);', what do the $1, $2, $3, and $4 represent?",
+            "options": [
+                { "label": "a", "text": "They represent placeholders for parameters that will be securely passed into the query" },
+                { "label": "b", "text": "They represent the column names in the Messages table" },
+                { "label": "c", "text": "They represent the specific SQL commands to be executed" },
+                { "label": "d", "text": "They represent the user IDs in the database" }
+            ]
+        },
+        {
+            "id": "40",
+            "description": "What is the primary function of middleware in Express.js?",
+            "options": [
+                { "label": "a", "text": "To handle the request-response cycle, such as authentication, logging, and validation." },
+                { "label": "b", "text": "To run background processes in the server." },
+                { "label": "c", "text": "To send the final response to the client." },
+                { "label": "d", "text": "To manage databases and make queries." }
+            ]
+        },
+        {
+            "id": "41",
+            "description": "How does authentication middleware function in Express.js?",
+            "options": [
+                { "label": "a", "text": "It checks if the user is authenticated and either allows access to the requested resource or denies access with an error message." },
+                { "label": "b", "text": "It stores user credentials for future use." },
+                { "label": "c", "text": "It logs user actions and tracks them in the server." },
+                { "label": "d", "text": "It validates input data before sending it to the database." }
+            ]
+        },
+        {
+            "id": "42",
+            "description": "What does the 'next()' function do in a middleware function?",
+            "options": [
+                { "label": "a", "text": "It passes control to the next middleware function or route handler in the stack." },
+                { "label": "b", "text": "It ends the request-response cycle immediately." },
+                { "label": "c", "text": "It validates the request data before proceeding." },
+                { "label": "d", "text": "It sends a response back to the client." }
+            ]
+        },
+        {
+            "id": "43",
+            "description": "Which of the following is a valid example of applying error-handling middleware in Express.js?",
+            "options": [
+                { "label": "a", "text": "app.use(errorHandler);" },
+                { "label": "b", "text": "app.get('/error', errorHandler);" },
+                { "label": "c", "text": "app.use((req, res, next) => { /* handler */ });" },
+                { "label": "d", "text": "app.post('/api', errorHandler);" }
+            ]
+        },
+        {
+            "id": "44",
+            "description": "How do you protect a route from unauthorized access in Express.js?",
+            "options": [
+                { "label": "a", "text": "By using authentication middleware to check if the user is authenticated before allowing access." },
+                { "label": "b", "text": "By checking the request method (GET, POST, etc.) before allowing access." },
+                { "label": "c", "text": "By using the 'secure' keyword in the route definition." },
+                { "label": "d", "text": "By encrypting all requests to the route." }
+            ]
+        },
+        {
+            "id": "45",
+            "description": "What happens when an error occurs in a middleware function and is passed to the next middleware with 'next(err)'?",
+            "options": [
+                { "label": "a", "text": "The error is passed to error-handling middleware to handle it." },
+                { "label": "b", "text": "The error is logged and the request is terminated immediately." },
+                { "label": "c", "text": "The error is sent as a response to the client." },
+                { "label": "d", "text": "The error is ignored and the request proceeds to the next route." }
+            ]
+        },
+        {
+            "id": "46",
+            "description": "In the example where middleware is used to read from a file system (e.g., 'readFromFile'), what is the purpose of the 'next()' function?",
+            "options": [
+                { "label": "a", "text": "It allows the application to proceed to the next middleware or route handler after the file is read." },
+                { "label": "b", "text": "It triggers a response to the client immediately after reading the file." },
+                { "label": "c", "text": "It ends the file reading process." },
+                { "label": "d", "text": "It skips the file reading step." }
+            ]
+        },
+        {
+            "id": "47",
+            "description": "What is a RESTful API?",
+            "options": [
+                { "label": "a", "text": "An API that uses only GET requests to retrieve data." },
+                { "label": "b", "text": "An API that adheres to REST principles like statelessness and uses HTTP methods for resource manipulation." },
+                { "label": "c", "text": "A type of API that only supports POST requests." },
+                { "label": "d", "text": "A type of API that only supports DELETE and PUT requests." }
+            ]
+        },
+        {
+            "id": "48",
+            "description": "Which HTTP method is typically used to update an existing resource on the server?",
+            "options": [
+                { "label": "a", "text": "GET" },
+                { "label": "b", "text": "POST" },
+                { "label": "c", "text": "PUT" },
+                { "label": "d", "text": "DELETE" }
+            ]
+        },
+        {
+            "id": "49",
+            "description": "What is the correct usage of the DELETE HTTP method in a RESTful API?",
+            "options": [
+                { "label": "a", "text": "To delete a specific resource, typically identified by its unique ID." },
+                { "label": "b", "text": "To update the content of a resource." },
+                { "label": "c", "text": "To retrieve data from the server." },
+                { "label": "d", "text": "To create a new resource." }
+            ]
+        },
+        {
+            "id": "50",
+            "description": "Which HTTP method would you use to send data to the server to create a new resource?",
+            "options": [
+                { "label": "a", "text": "GET" },
+                { "label": "b", "text": "POST" },
+                { "label": "c", "text": "PUT" },
+                { "label": "d", "text": "PATCH" }
+            ]
+        },
+        {
+            "id": "51",
+            "description": "How is a PATCH request different from a PUT request in a RESTful API?",
+            "options": [
+                { "label": "a", "text": "PATCH is used to update a resource partially, whereas PUT replaces the entire resource." },
+                { "label": "b", "text": "PATCH is used to create a resource, while PUT is used to delete a resource." },
+                { "label": "c", "text": "PATCH and PUT are exactly the same, there is no difference." },
+                { "label": "d", "text": "PATCH is used only for retrieving data from the server." }
+            ]
+        },
+        {
+            "id": "52",
+            "description": "What does a 404 HTTP status code indicate in response to an API request?",
+            "options": [
+                { "label": "a", "text": "Internal Server Error" },
+                { "label": "b", "text": "OK - The request was successful" },
+                { "label": "c", "text": "Not Found - The requested resource could not be found on the server" },
+                { "label": "d", "text": "Unauthorized - The request requires authentication" }
+            ]
+        },
+        {
+            "id": "53",
+            "description": "What is the primary function of a GET request in RESTful APIs?",
+            "options": [
+                { "label": "a", "text": "To retrieve data from the server" },
+                { "label": "b", "text": "To create a new resource on the server" },
+                { "label": "c", "text": "To update existing data on the server" },
+                { "label": "d", "text": "To delete a resource from the server" }
+            ]
+        },
+        {
+            "id": "54",
+            "description": "When should you use the PUT method instead of the POST method in a RESTful API?",
+            "options": [
+                { "label": "a", "text": "When you want to update an existing resource completely" },
+                { "label": "b", "text": "When creating a new resource" },
+                { "label": "c", "text": "When you want to retrieve data from the server" },
+                { "label": "d", "text": "When deleting a resource" }
+            ]
+        },
+        {
+            "id": "55",
+            "description": "What does the status code 200 indicate in the response to an HTTP request?",
+            "options": [
+                { "label": "a", "text": "The request was successful and the server has returned the requested data" },
+                { "label": "b", "text": "The request was successfully processed, but no content is returned" },
+                { "label": "c", "text": "There was an error processing the request" },
+                { "label": "d", "text": "The resource requested could not be found" }
+            ]
+        }
+    ],
+    "answers": {
+        "0": {
+            "answer": "b",
+            "explanation": "The backend is responsible for processing and storing data, and handling server-side logic, serving as the bridge between the frontend and the database."
+        },
+        "1": {
+            "answer": "b",
+            "explanation": "Node.js is a JavaScript runtime that allows developers to execute JavaScript code on the server-side, making it a key technology for backend development."
+        },
+        "2": {
+            "answer": "a",
+            "explanation": "Express.js is a popular web application framework for Node.js, simplifying tasks like routing, request processing, and error handling in backend applications."
+        },
+        "3": {
+            "answer": "c",
+            "explanation": "PostgreSQL is a powerful open-source relational database management system known for its extensibility, support for complex queries, and data integrity features."
+        },
+        "4": {
+            "answer": "b",
+            "explanation": "The 'pg' npm package is used to interact with PostgreSQL from a Node.js application, allowing you to perform database operations."
+        },
+        "5": {
+            "answer": "b",
+            "explanation": "Node.js is a JavaScript runtime that allows developers to use JavaScript for backend development, enabling full-stack JavaScript applications."
+        },
+        "6": {
+            "answer": "b",
+            "explanation": "The primary benefit of Node.js is its ability to enable efficient data synchronization between the client and server using JavaScript, making it ideal for full-stack development."
+        },
+        "7": {
+            "answer": "a",
+            "explanation": "Node.js is built on the V8 JavaScript engine, which is known for its high performance in executing JavaScript code."
+        },
+        "8": {
+            "answer": "b",
+            "explanation": "Running 'npm init -y' initializes a Node.js project and automatically generates a package.json file to manage project dependencies."
+        },
+        "9": {
+            "answer": "a",
+            "explanation": "The command 'npm install express' is used to install the Express.js library in a Node.js project."
+        },
+        "10": {
+            "answer": "a",
+            "explanation": "'node hello.js' runs the hello.js script and outputs the result to the terminal, typically displaying the 'Hello, Node.js!' message."
+        },
+        "11": {
+            "answer": "b",
+            "explanation": "You create .js files to write and execute Node.js scripts, and then run them from the terminal using the 'node' command."
+        },
+        "12": {
+            "answer": "c",
+            "explanation": "Express.js is a fast, minimalistic, and flexible Node.js web application framework that simplifies the process of building RESTful APIs with features like routing, middleware, and error handling."
+        },
+        "13": {
+            "answer": "a",
+            "explanation": "Middleware in Express.js allows you to add extra functionality, such as authentication, logging, and validation, to incoming requests before they reach the route handlers."
+        },
+        "14": {
+            "answer": "b",
+            "explanation": "To handle a GET request in Express.js, you define a route using the app.get() method followed by the route path and the handler function."
+        },
+        "15": {
+            "answer": "b",
+            "explanation": "The app.use() method in Express.js is used to add middleware to process incoming requests before they are passed to the route handlers."
+        },
+        "16": {
+            "answer": "c",
+            "explanation": "In Express.js, you can send a JSON response to the client using the res.json() method."
+        },
+        "17": {
+            "answer": "a",
+            "explanation": "The express.json() middleware parses incoming JSON request bodies, making it easy to work with JSON data in the request."
+        },
+        "18": {
+            "answer": "a",
+            "explanation": "To handle a POST request in Express.js, you define a route using the app.post() method followed by the route path and the handler function."
+        },
+        "19": {
+            "answer": "b",
+            "explanation": "PostgreSQL is a powerful, open-source relational database management system, known for its reliability, performance, and extensibility."
+        },
+        "20": {
+            "answer": "a",
+            "explanation": "Creating a user in PostgreSQL helps in granting access to the database and assigning specific permissions for various operations."
+        },
+        "21": {
+            "answer": "a",
+            "explanation": "The JSONB data type in PostgreSQL is used to store an array of JSON objects, making it suitable for handling structured data."
+        },
+        "22": {
+            "answer": "a",
+            "explanation": "In PostgreSQL, a table is created using the CREATE TABLE command followed by the table definition."
+        },
+        "23": {
+            "answer": "a",
+            "explanation": "The SERIAL data type in PostgreSQL is used to automatically generate a unique identifier for each row, often used as a primary key."
+        },
+        "24": {
+            "answer": "a",
+            "explanation": "The GRANT ALL PRIVILEGES ON DATABASE command assigns full access to a specific database to a user in PostgreSQL."
+        },
+        "25": {
+            "answer": "a",
+            "explanation": "The CREATE DATABASE command in PostgreSQL is used to create a new database with the specified name."
+        },
+        "26": {
+            "answer": "a",
+            "explanation": "The ALTER ROLE command in PostgreSQL is used to modify the properties of an existing role (user), such as permissions and settings."
+        },
+        "27": {
+            "answer": "a",
+            "explanation": "In the context of a messaging app, the Messages table would store the user's messages, with each message linked to the sender and receiver."
+        },
+        "28": {
+            "answer": "b",
+            "explanation": "This query retrieves all messages from user1@example.com to user2@example.com, ordered by timestamp in descending order to show the most recent messages first."
+        },
+        "29": {
+            "answer": "b",
+            "explanation": "This query shows the correct way to insert a new message using parameterized queries for security, with the timestamp automatically set to the current time using NOW()."
+        },
+        "30": {
+            "answer": "a",
+            "explanation": "Parameterized queries are used to prevent SQL injection by ensuring that user inputs are properly sanitized and treated as parameters rather than part of the SQL command."
+        },
+        "31": {
+            "answer": "a",
+            "explanation": "This query shows the correct way to update a message's content using parameterized queries and specific conditions to identify the exact message to update."
+        },
+        "32": {
+            "answer": "a",
+            "explanation": "Using the message_id with a parameterized query is the safest and most precise way to delete a specific message from the messages table."
+        },
+        "35": {
+            "answer": "b",
+            "explanation": "This query retrieves the complete conversation between two users by checking both directions of the messages and ordering them by timestamp. The use of parameterized queries ($1, $2) prevents SQL injection."
+        },
+        "36": {
+            "answer": "a",
+            "explanation": "SQL injection is a security vulnerability where malicious SQL code can be inserted into queries. Parameterized queries help prevent this attack."
+        },
+        "37": {
+            "answer": "a",
+            "explanation": "The ORDER BY clause is used to sort the retrieved data in a specific order."
+        },
+        "38": {
+            "answer": "a",
+            "explanation": "The DELETE SQL query is used to remove specific messages between users in a messaging app."
+        },
+        "39": {
+            "answer": "a",
+            "explanation": "The $1, $2, $3, and $4 are placeholders in the query for securely passed parameters, ensuring safe and sanitized user inputs."
+        },
+        "40": {
+            "answer": "a",
+            "explanation": "Middleware in Express.js is used to handle tasks like authentication, logging, and data validation during the request-response cycle."
+        },
+        "41": {
+            "answer": "a",
+            "explanation": "Authentication middleware checks if the user is authenticated and either grants or denies access to protected resources."
+        },
+        "42": {
+            "answer": "a",
+            "explanation": "The 'next()' function passes control to the next middleware or route handler in the Express.js stack."
+        },
+        "43": {
+            "answer": "a",
+            "explanation": "To apply error-handling middleware in Express.js, you can use 'app.use(errorHandler);', which catches errors and handles them centrally."
+        },
+        "44": {
+            "answer": "a",
+            "explanation": "Authentication middleware is used to check if the user is authenticated before allowing access to protected routes."
+        },
+        "45": {
+            "answer": "a",
+            "explanation": "When an error is passed with 'next(err)', it is handled by the error-handling middleware, ensuring consistent error management across the app."
+        },
+        "46": {
+            "answer": "a",
+            "explanation": "In the example, 'next()' allows the application to continue processing the request and pass control to the next middleware or route handler after reading the file."
+        },
+        "47": {
+        "answer": "b",
+        "explanation": "A RESTful API adheres to REST principles like statelessness and uses HTTP methods for resource manipulation, making it a widely-used architectural style for web services."
+        },
+        "48": {
+            "answer": "c",
+            "explanation": "The PUT method is used to update an existing resource on the server by replacing its current representation with the provided data."
+        },
+        "49": {
+            "answer": "a",
+            "explanation": "The DELETE method is used to remove a specific resource, typically identified by its unique ID, from the server."
+        },
+        "50": {
+            "answer": "b",
+            "explanation": "The POST method is used to send data to the server to create a new resource, often involving the submission of form data or creating new entries in a database."
+        },
+        "51": {
+            "answer": "a",
+            "explanation": "PATCH is used to update a resource partially, meaning only the specific fields that need to be updated will be modified, unlike PUT which replaces the entire resource."
+        },
+        "52": {
+            "answer": "c",
+            "explanation": "A 404 status code means that the requested resource could not be found on the server, indicating the URL or resource does not exist."
+        },
+        "53": {
+            "answer": "a",
+            "explanation": "The primary function of a GET request is to retrieve data from the server, commonly used for fetching resources or information from an API."
+        },
+        "54": {
+            "answer": "a",
+            "explanation": "The PUT method is used when updating an existing resource completely, replacing the entire resource with the provided data."
+        },
+        "55": {
+            "answer": "a",
+            "explanation": "A 200 status code indicates that the request was successful and the server has returned the requested data or processed the action as expected."
+        }
+    }    
+}

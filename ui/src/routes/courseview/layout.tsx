@@ -19,14 +19,34 @@ interface CourseDetailsInterface {
   coursecodebase: string; // URL of the course code base
 }
 
+interface answerObjectInterface {
+    answer: string;
+    explanation: string;
+}
+
+interface answersSelectedByUserInterface {
+    [key: string]: answerObjectInterface;
+}
+interface quizQuestionOptionsInterface {
+  label: string;
+  text: string;
+}
+
+interface questionBankInterface {
+  id: number;
+  description: string;
+  options: quizQuestionOptionsInterface[];
+}
+
 const CourseView = () => {
 
   const {courseid} = useParams();
   const [courseDetails, setCourseDetails] = useState<CourseDetailsInterface | null>(null);
   const [courseFiles, setCourseFiles] = useState<courseFilesInterface[]>([]);
-  const [questionBank, setQuestionBank] = useState<{} | null>(null);
+  const [questionBank, setQuestionBank] = useState<questionBankInterface[] | null>(null);
+  // const [answersById, setAnswersById] = useState<answersSelectedByUserInterface>({});
   const [selectedCourseFile, setSelectedCourseFile] = useState("");
-  const [questionBankUrl, setQuestionBankUrl] = useState("");
+  const [courseId, setCourseId] = useState("");
   const [courseName, setCourseName] = useState("");
 
   const handleCourseFileSelection = (fileurl: string) =>{
@@ -42,6 +62,7 @@ const CourseView = () => {
     if(quizWindow){
       if(quizWindow.style.display != "block"){
         quizWindow.style.display = "block";
+        quizWindow.style.height = "100vh";
       }
       else if(quizWindow.style.display === "block"){
         quizWindow.style.display = "none";
@@ -58,7 +79,7 @@ const CourseView = () => {
       const filesList = JSON.parse(res[0].coursefiles);
       setSelectedCourseFile(filesList[0].fileurl);
       setCourseName(res[0].coursename);
-      setQuestionBankUrl(res[0].coursequizbank)
+      setCourseId(res[0].courseid)
 
     }catch(err){
       console.log(err);
@@ -67,22 +88,22 @@ const CourseView = () => {
   
   const getQuizQuestions = async() => {
     
-    const reqBody = JSON.stringify({
-      questionbankurl: questionBankUrl
-    })
+    const reqBody = {
+      courseId: courseId
+    }
 
     const req = await fetch(`http://localhost:3000/courses/getcoursequizquestions`,{
       method: "POST",
       headers: {
         'Content-Type': 'application/json',
       },
-      body: reqBody
+      body: JSON.stringify(reqBody)
     });
 
     const res = await req.json();
 
-    console.log(res)
-    setQuestionBank(res);
+    setQuestionBank(res.questions);
+    // setAnswersById(res.answers);
 
   }
 
@@ -111,11 +132,9 @@ const CourseView = () => {
 
       </div>
 
-      <QuizView courseNameAsProps={courseName} questionBankAsProps={questionBank} onQuizClosed={handleQuizSelected} />
+      <QuizView courseNameAsProps={courseName} questionBankAsProps={questionBank} courseIdAsProps={courseId} onQuizClosed={handleQuizSelected} />
     </div>
   )
 }
 
 export default CourseView;
-
-//Write Window View For Patterns UI
