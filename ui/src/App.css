@@ -30,6 +30,7 @@ input, select{
   text-align: left;
   margin: 12px auto;
   margin-right: 1%;
+  vertical-align: text-top;
 }
 .quiz-option-button:hover{
   background-color: aliceblue;

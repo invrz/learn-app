@@ -55,20 +55,16 @@ const QuizView = ({ courseNameAsProps, questionBankAsProps, courseIdAsProps, onQ
 
     const res = await req.json();
     
-
-    // Object.keys(answersByIdAsProps).forEach(key =>{
-    //   if(answersSelectedByUser[key] && (answersByIdAsProps[key].answer === answersSelectedByUser[key].answer)){
-    //     scoreAcquired++;
-    //   }
-    //   scorePossible++;
-    // })
-
     setMarksReceived(res.scoreAcquired);
     setTotalMarks(res.maxScore);
     setMarksInPercent(res.scoreInPercent);
 
     submitQuiz();
+
+
   }
+
+
 
   const submitQuiz = useCallback(() =>{
     const quizScreen = document.getElementById("quiz-main-wrapper");
@@ -108,33 +104,36 @@ const QuizView = ({ courseNameAsProps, questionBankAsProps, courseIdAsProps, onQ
   }, [])
 
   return (
-    <div className="window-view" id="quiz-window">
-      <div className="window-title bg-muted-dark">
-        <p className="window-title-text">Quiz On {courseNameAsProps}</p>
-        <button className="window-title-action bg-error border--none border--smooth" onClick={()=>{onQuizClosed()}}>&nbsp;&nbsp; X &nbsp;&nbsp;</button>
-      </div>
-      <div className="window-content bg-muted-light">
-        <div id="quiz-start-wrapper" className="content-view">
-          <div className="grid-row--vertical col-height--inherit row-center row-middle">
-            <h1 className="title">Ready for a Quiz ?</h1><br/>
-            <p className="subtitle">Test yourself based on the topics covered in the course.</p>
-            <p className="subtitle">The questions will either be single correct or multiple correct in a multiple choice questions format.</p><br/>
-            <button className="border--smooth border--none bg-brand-light text-brand primary-quiz-button" onClick={()=>startQuiz()}>Start Quiz</button>
-          </div>
+    <>
+      <div className="window-view" id="quiz-window">
+        <div className="window-title bg-muted-dark">
+          <p className="window-title-text">Quiz On {courseNameAsProps}</p>
+          <button className="window-title-action bg-error border--none border--smooth" onClick={()=>{onQuizClosed()}}>&nbsp;&nbsp; X &nbsp;&nbsp;</button>
         </div>
+        <div className="window-content bg-muted-light">
+          <div id="quiz-start-wrapper" className="content-view">
+            <div className="grid-row--vertical col-height--inherit row-center row-middle">
+              <h1 className="title">Ready for a Quiz ?</h1><br/>
+              <p className="subtitle">Test yourself based on the topics covered in the course.</p>
+              <p className="subtitle">The questions will either be single correct or multiple correct in a multiple choice questions format.</p><br/>
+              <button className="border--smooth border--none bg-brand-light text-brand primary-quiz-button" onClick={()=>startQuiz()}>Start Quiz</button>
+            </div>
+          </div>
 
-        <Quiz questionBankAsPropsForQuiz={questionBankAsProps} onQuizSubmitted={handleQuizSubmitted} />
-        
-        <div id="quiz-summary-wrapper" className="content-view">
-          <div className="grid-row--vertical col-height--inherit row-center row-middle">
-            <h1 className="title">Your Quiz is submitted</h1>
-            <p className="subtitle">Here's how you performed</p>
-            <p className="text--regular">{marksReceived.toString()}/{totalMarks.toString()} or {marksInPercent.toString()}%</p>
-            <button className="border--smooth border--none bg-brand-light text-brand primary-quiz-button" onClick={()=>retryQuiz()}>Retry Quiz</button>
-          </div>
+          <Quiz questionBankAsPropsForQuiz={questionBankAsProps} onQuizSubmitted={handleQuizSubmitted} />
+          
+          <div id="quiz-summary-wrapper" className="content-view">
+            <div className="grid-row--vertical col-height--inherit row-center row-middle">
+              <h1 className="title">Your Quiz is submitted</h1>
+              <p className="subtitle">Here's how you performed</p>
+              <p className="text--regular">{marksReceived.toString()}/{totalMarks.toString()} or {marksInPercent.toString()}%</p>
+              <button className="border--smooth border--none bg-brand-light text-brand primary-quiz-button" onClick={()=>retryQuiz()}>Retry Quiz</button>
+            </div>
+          </div>          
+
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

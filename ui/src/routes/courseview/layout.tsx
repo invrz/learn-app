@@ -19,14 +19,6 @@ interface CourseDetailsInterface {
   coursecodebase: string; // URL of the course code base
 }
 
-interface answerObjectInterface {
-    answer: string;
-    explanation: string;
-}
-
-interface answersSelectedByUserInterface {
-    [key: string]: answerObjectInterface;
-}
 interface quizQuestionOptionsInterface {
   label: string;
   text: string;
@@ -44,7 +36,6 @@ const CourseView = () => {
   const [courseDetails, setCourseDetails] = useState<CourseDetailsInterface | null>(null);
   const [courseFiles, setCourseFiles] = useState<courseFilesInterface[]>([]);
   const [questionBank, setQuestionBank] = useState<questionBankInterface[] | null>(null);
-  // const [answersById, setAnswersById] = useState<answersSelectedByUserInterface>({});
   const [selectedCourseFile, setSelectedCourseFile] = useState("");
   const [courseId, setCourseId] = useState("");
   const [courseName, setCourseName] = useState("");
